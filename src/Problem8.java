@@ -8,7 +8,7 @@ public class Problem8 {
 
 class DecksOfCards{
 
-    public String suit[] = new String[4];
+    public String suit[] = {"Hearts", "Diamonds", "Spade", "Club"};
     public String rank[] = new String[13];
     public String[] card = new String[suit.length * rank.length];
     public int cardNumber=0;
@@ -29,12 +29,7 @@ class DecksOfCards{
     }
 
     public void intitalizingDeck(){
-
-        suit[0]="Hearts";
-        suit[1]="Diamond";
-        suit[2]="spade";
-        suit[3]="club";
-
+        
         rank[0]="ace";
         for (int a=1; a<10; a++ ){
             rank[a] =String.valueOf(a+1);
@@ -84,7 +79,6 @@ class DecksOfCards{
                 if(gotCard<=8) {
                     player[i][j] =card[j];
                     z++;
-
                 }
             }
         }
